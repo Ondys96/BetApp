@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="betapp.css">
+    <title>betapp</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sázení na sportovní zápasy</h1>
+        <form id="betForm">
+            <label for="name">Jméno:</label>
+            <input type="text" id="name" required>
+
+            <label for="team1">Tým 1:</label>
+            <input type="text" id="team1" required>
+
+            <label for="team2">Tým 2:</label>
+            <input type="text" id="team2" required>
+
+            <label for="betAmount">Výše sázky:</label>
+            <input type="text" id="betAmount" required>
+
+            <button type="submit">Sázka</button>
+        </form>
+
+        <div id="bets">
+            <h2>Aktuální sázky:</h2>
+            <ul id="betsList"></ul>
+        </div>
+    </div>
+    <script src="betapp.js"></script>
+</body>
+</html>
