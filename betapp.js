@@ -1,6 +1,7 @@
 document.getElementById('betForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
+    // získávání hodnot z formuláře a ukládání do proměnné
     const name = document.getElementById('name').value;
     const team1 = document.getElementById('team1').value;
     const team2 = document.getElementById('team2').value;
